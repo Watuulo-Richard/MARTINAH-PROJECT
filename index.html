@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/icons8-journal-3d-fluency-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="./input.css">
     <style>
         html,
         body {
@@ -80,14 +81,13 @@
             <!-- Logo -->
             <div class="flex items-center gap-x-2">
                 <a href="#">
-                    <div class="w-16">
-                        <img src="./images/avatar-anisha.png" class="w-full h-full object-cover block" alt="">
+                    <div class="w-16 h-16 rounded-full overflow-hidden">
+                        <img src="./images/education-school-icons_24911-39310.jpg" class="w-full h-full object-cover block" alt="">
                     </div>
                 </a>
                 <a href="#">
                     <div class="flex flex-col">
-                        <p class="font-bold text-md">High School Journal</p>
-                        <p class="font-bold text-md">@Martina</p>
+                        <p class="font-bold text-xl">Epiphany Archives</p>
                     </div>
                 </a>
             </div>
@@ -100,10 +100,22 @@
             </div>
             <!-- Button -->
             <a href="#" class="hidden md:block py-3 px-6 text-white bg-brightRed rounded-full transition-all ease-in-out duration-150 hover:bg-brightRedLight ">Get Started</a>
-            <button class="md:hidden py-3 px-6 text-brightRed bg-brightRedSupLight border-2 border-brightRed rounded-lg transition-all ease-in-out duration-150 hover:bg-darkGrayishBlue ">
-              <i class="fa-solid fa-bars"></i>
+
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
             </button>
         </div>
+        <!-- Mobile-Menu -->
+         <div class="md:hidden">
+          <div id="menu" class="absolute flex-col items-center font-bold self-end hidden py-8 mt-10 space-y-6 bg-slate-50 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#hero" class="transition-all ease-in-out  hover:text-darkBlue hover:underline duration-100">Home</a>
+                <a href="#about" class="transition-all ease-in-out duration-100 hover:text-darkBlue hover:underline  ">About</a>
+                <a href="#articles" class="transition-all ease-in-out duration-100 hover:underline hover:text-darkBlue">Articles</a>
+                <a href="#contact" class="transition-all ease-in-out duration-100 hover:text-darkBlue hover:underline">Contact</a>
+          </div>
+         </div>
      </nav>
 
     <!-- Hero Section -->
@@ -390,5 +402,6 @@
       },
     });
   </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
