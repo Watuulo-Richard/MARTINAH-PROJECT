@@ -141,34 +141,40 @@
             </div>
         </div>
     </section> 
-    <section class="container mx-auto px-6 mb-16">
-        <!-- /* Swiper */ -->
-        <div class=" absolute swiper mySwiper rounded-lg shadow-2xl inset-0 bg-veryDarkBlue">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/V1.jpg" class="w-full h-full object-cover block" alt=""/>
+    <section class="container mx-auto px-6 mb-16 relative">
+      <!-- Swiper -->
+      <div class="relative">
+          <!-- Overlay -->
+          <div class="absolute rounded-lg shadow-2xl inset-0 bg-black bg-opacity-50 z-10 pointer-events-none"></div>
+          
+          <div class="swiper mySwiper rounded-lg shadow-2xl inset-0 bg-veryDarkBlue relative z-20">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="./images/V1.jpg" class="w-full h-full object-cover block" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/V2.jpg" class="w-full h-full object-cover block" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/V3.jpg" class="w-full h-full object-cover block" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/V9.jpg" class="w-full h-full object-cover block" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/V8.jpg" class="w-full h-full object-cover block" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./images/V0.jpg" class="w-full h-full object-cover block" alt="" />
+                  </div>
               </div>
-              <div class="swiper-slide">
-                <img src="./images/V2.jpg" class="w-full h-full object-cover block" alt=""/>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/V3.jpg" class="w-full h-full object-cover block" alt=""/>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/V9.jpg" class="w-full h-full object-cover block" alt=""/>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/V8.jpg" class="w-full h-full object-cover block" alt=""/>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/V0.jpg" class="w-full h-full object-cover block" alt=""/>
-              </div>
-            </div>
-            <div class="swiper-button-next "></div>
-            <div class="swiper-button-prev "></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
+              <div class="swiper-button-next z-30"></div>
+              <div class="swiper-button-prev z-30"></div>
+              <div class="swiper-pagination z-30"></div>
+          </div>
+      </div>
+  </section>
+  
 
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4">
